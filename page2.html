@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page2">
+        <div class="popup">
+          <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2 class="popup-title"></h2>
+            <p class="popup-rating"></p>
+            <p class="popup-language"></p>
+            <p class="popup-duration"></p>
+            <p class="popup-genre"></p>
+            <p class="popup-overview"></p>
+            <p class="popup-price"></p>
+            <button class="popup-button">Book Now</button>
+          </div>
+        </div>
+
+
+        <!-- PAYMENT FORM -->
+         <div class="checkout">
+
+          <div class="summary">
+            <h2>Summary</h2>
+            <p>Movie: <span class="movie-name"></span></p>
+            <p>Classic Ticket <span class="ticket-price"></span></p>
+            <label for="numTickets">Number of Tickets:</label>
+            <input type="number" id="numTickets" min="1" value="1" />
+            <p>Convenience Fee(1.75%) <span class="convenience-fee"></span></p>
+            <p>Subtotal: <span class="subtotal"></span></p>
+          </div>
+
+
+          <div class="payment">
+            <h2>Checkout</h2>
+            <form>
+              <h2>Payment</h2>
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" required/>
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" required/>
+              <label for="email">Email:</label>
+              <input type="email" id="email" required /><br/>
+              <hr/>
+              <label for="paymentMethod">Payment Method:</label>
+              <select id="paymentMethod" required>
+                <option value="credit">Credit Card</option>
+                <option value="debit">Debit Card</option>
+                <option value="paypal">PayPal</option>
+              </select>
+              <button class="pay-button">Pay Now</button>
+            </form>
+          </div>
+        </div>
+      </div> 
+</body>
+</html>
